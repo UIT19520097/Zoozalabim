@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font-icon/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./package.json">
+   
+    <title>ZOOZALABIM</title>
+</head>
+<body>
+    <div id="main">
+        <!-- Header -->
+        <div class="header">
+            <img src="./assets/image/ZOOZALABIM-07.png" alt="" class="header__logo">
+            <ul class="header__nav">
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Muôn loài</a></li>
+                <li><a href="">Tin tức - Sự kiện</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+            <div class="header__btn">
+                <a href="" class="header__btn-buy-ticket btn--white ">
+                    MUA VÉ
+                </a>
+                <a href="" class="header__btn-donate btn--green">
+                    TÀI TRỢ
+                </a>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="slider">
+            <div class="slides">
+                 <!-- Radio button  -->
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+                <!-- img -->
+                <div class="slide slide-first">
+                    <img src="./assets/image/Slide1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/image/Slide2.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./assets/image/Slide3.jpeg" alt="">
+                </div>  
+                 <!-- automatic navigation -->
+                <div class="navigation-auto">
+                    <div class="auto-btn auto-btn1"></div>
+                    <div class="auto-btn auto-btn2"></div>
+                    <div class="auto-btn auto-btn3"></div>
+                </div>         
+            </div>
+            <!-- Manual navigation -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>        
+            </div>
+           <div class="slider__content">
+               <h3 class="slider__content-title">
+                    HÒA MÌNH VỚI THIÊN NHIÊN
+               </h3>
+               <div class="slider__content-desc">
+                Khi con người ta đã quá quen thuộc với bộn bề cao ốc, khói bụi xe cộ... thì trong sâu thẳm trong thâm tâm đều mong muốn được về với thiên nhiên. Hãy cùng nhau giúp đỡ muôn loài, góp phần bảo vệ thiên nhiên tươi đẹp
+               </div>
+               <div class="slider__content-btn">
+                   <a href="" class="slider__btn-register btn--green">Đăng ký</a>
+                   <a href="" class="slider__btn-login btn--white">Đăng nhập</a>
+               </div>
+           </div>
+        </div>
+        <!-- Content -->
+        <div class="content">
+            <!-- Thông tin -->
+            <div class="info">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                    <p class="info-title">Giờ hoạt động</p>
+                    <p class="info-desc">09:00AM 07:00AM</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <p class="info-title">Vị trí</p>
+                    <p class="info-desc">Quận Thủ Đức, TPHCM</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="far fa-map"></i>
+                    </div>
+                    <p class="info-title">Bản đồ sở thú</p>
+                    <p class="info-desc">Diện tích: 10000ha, nằm giữa thảo nguyên</p>
+                </div>
+            </div>
+            <!-- Giới thiệu -->
+            <div class="introduce">
+                <img src="./assets/image/bird-introduce.png" alt="" class="introduce__img-bird">
+                <div class="introduce__content">
+                    <div class="introduce-title">
+                        <h2 class="section-heading">
+                            GIỚI THIỆU
+                        </h2>
+                    </div>
+                    <div class="section-desc">
+                        Khi con người ta đã quá quen thuộc với bộn bề cao ốc, khói bụi xe cộ... thì trong sâu thẳm trong thâm tâm đều mong muốn được về với thiên nhiên. Hãy cùng nhau giúp đỡ muôn loài, góp phần bảo vệ thiên nhiên tươi đẹp
+                    </div> 
+                </div>
+                <div class="introduce__shape"></div>
+                <img class="introduce__img" src="./assets/image/introduce.jpeg"></img>
+            </div>
+            <!-- Hỗ trợ -->
+            <div class="support">
+
+            </div>
+            <!-- Hình ảnh thú  -->
+            <div class="image-animal">
+                <h2 class="section-heading">CÁC LOÀI ĐỘNG VẬT</h2>
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="animal-item">
+                                    <img src="./assets/image/meo.jpeg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+            </div>
+            <!-- Video thú -->
+            <div class="video">
+                <h2 class="section-heading">VIDEO</h2>
+                <div class="video__category">
+                    <div class="video__category-place">
+                        <iframe class="video__category-place-display" width="1120px" height="630px" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video__category-option-list">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Tin tức -->
+            <div class="news">
+                <div class="news__content">
+                    <div class="news-title">
+                        <h2 class="section-heading">
+                            TIN TỨC MỚI NHẤT
+                        </h2>
+                    </div>
+                    <div class="section-desc">
+                        Khi con người ta đã quá quen thuộc với bộn bề cao ốc, khói bụi xe cộ... thì trong sâu thẳm trong thâm tâm đều mong muốn được về với thiên nhiên. Hãy cùng nhau giúp đỡ muôn loài, góp phần bảo vệ thiên nhiên tươi đẹp
+                    </div>  
+                </div>
+                <div class="news__list">
+                    <div class="news__item">
+                        <img src="./assets/image/116203402_156286772758587_1828794733514680117_n.jpg" alt="" class="news__item-img">
+                        <div class="news__item-content">
+                            <div class="news__item-content-title">Tình người lúc khó khăn</div>
+                            <div class="news__item-content-date">20:00 20/10/2021</div>
+                            <div class="news__item-content-desc">Các nhân viên sở thú chấp nhận giảm 30% lương</div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="./assets/image/116203402_156286772758587_1828794733514680117_n.jpg" alt="" class="news__item-img">
+                        <div class="news__item-content">
+                            <div class="news__item-content-title">Tình người lúc khó khăn</div>
+                            <div class="news__item-content-date">20:00 20/10/2021</div>
+                            <div class="news__item-content-desc">Các nhân viên sở thú chấp nhận giảm 30% lương</div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <img src="./assets/image/116203402_156286772758587_1828794733514680117_n.jpg" alt="" class="news__item-img">
+                        <div class="news__item-content">
+                            <div class="news__item-content-title">Tình người lúc khó khăn</div>
+                            <div class="news__item-content-date">20:00 20/10/2021</div>
+                            <div class="news__item-content-desc">Các nhân viên sở thú chấp nhận giảm 30% lương</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- Liên hệ -->
+            <div class="contact">
+                <div class="contact__shape"></div>
+                <img class="contact__img" src="./assets/image/contact-img.jpeg"></img>
+                <div class="contact__content">
+                    <div class="contact-title">
+                        <h2 class="section-heading">
+                            LIÊN HỆ
+                        </h2>
+                    </div>
+                    <div class="contact-desc">
+                        
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <!-- <img src="./assets/image/bird footer.jpeg" alt="" class="footer__img" > -->
+            <div class="footer__list">
+                <div class="footer__item">
+                    <div class="footer__item-heading">Giờ hoạt động</div>
+                    <div class="footer__item-desc">9:00AM - 7:00PM</div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-heading">Tài khoản</div>
+                    <div class="footer__item-desc">
+                        <a href="">Thông tin</a>
+                        <a href="">Quyên góp</a>
+                        <a href="">Mua vé</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-heading">Động vật</div>
+                    <div class="footer__item-desc">
+                        <a href="">Hình ảnh</a>
+                        <a href="">Video</a>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-heading">Liên hệ</div>
+                    <div class="footer__item-desc">
+                        <p>Email: zoozalabim123@gmail.com</p>
+                        <p>Sđt: 000000000</p>
+                        <p>Địa chỉ: Ktx khu B</p>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-heading">Theo dõi</div>
+                    <div class="footer__item-icon">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCYuKdJxV9HXNklgU5OX0rBw"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/image/ZOOZALABIM-07.png" alt="" class="footer__logo">
+            <div class="footer__copyright">
+                © 2021 All Rights Reserved Terms of Use and Privacy Policy
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./swipper.js"></script>
+</body>
+</html>
