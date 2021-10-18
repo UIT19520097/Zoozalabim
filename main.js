@@ -17,36 +17,36 @@ const videos={
   currentIndex:0,
   videoList: [
     {
-      name:'ON',
+      name:'BTS',
       link:'https://www.youtube.com/embed/kFNJTAaAYnU'
     },
     {
-      name:'DNA',
-      link:'https://www.youtube.com/embed/XPTx4BjdyV4'
+      name:'NCT',
+      link:'https://www.youtube.com/embed/5FMI-gLo1uc'
     },
     {
-      name:'FIRE',
-      link:'https://www.youtube.com/embed/cbSy36fu6Pk'
+      name:'BLACK PINK',
+      link:'https://www.youtube.com/embed/7gIx2kEP2_0'
     },
     {
-      name:'IDOL',
-      link:'https://www.youtube.com/embed/1WvM5S7bdFU'
+      name:'BIG BANG',
+      link:'https://www.youtube.com/embed/4x9C31ECfRM'
     },
     {
-      name:'BOY WITH LUV',
-      link:'https://www.youtube.com/embed/D2xmlzMOsmM'
+      name:'EXO',
+      link:'https://www.youtube.com/embed/lHrIF3UVEww'
     },
     {
-      name:'FAKE LOVE',
-      link:'https://www.youtube.com/embed/6LB4JWRnyrM'
+      name:'SUPER JUNIOR',
+      link:'https://www.youtube.com/embed/jc3XI_n_4i8'
     },
     {
-      name:'DYNAMITE',
-      link:'https://www.youtube.com/embed/F43Rj9c1TQs'
+      name:'TWICE',
+      link:'https://www.youtube.com/embed/y9DxUmPM8pQ'
     },
     {
-      name:'MIC DROP',
-      link:'https://www.youtube.com/embed/22RRaO5AuOo'
+      name:'MOMOLAND',
+      link:'https://www.youtube.com/embed/wo08FFSEqRs'
     },
   ],
   render: function() {
@@ -77,7 +77,6 @@ const videos={
     {
       var videoNodeActive=$('.video__category-option-item.active');
       const videoNode=e.target.closest('.swiper-slide .video__category-option-item')
-      console.log(videoNode)
       if(videoNode)
       {
         videoNodeActive.classList.remove('active');
