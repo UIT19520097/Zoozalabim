@@ -19,27 +19,29 @@
     <div id="main">
         <!-- Header -->
         <div class="header">
-            <a href="#" class="header__logo-link">
-                <img src="./assets/image/ZOOZALABIM-07.png" alt="" class="header__logo-img">
-            </a>
-            <ul class="header__nav">
-                <li class="header__nav-introduce"><a href="#introduce">Giới thiệu</a></li>
-                <li class="header__nav-animal"><a href="#animal">Muôn loài</a>
-                    <!-- <ul class="header__subnav-animal">
-                        <li><a href="#image">Hình ảnh</a></li>
-                        <li><a href="#video">Video</a></li>
-                    </ul> -->
-                </li>
-                <li class="header__nav-news"><a href="#news">Tin tức - Sự kiện</a></li>
-                <li class="header__nav-contact"><a href="#contact">Liên hệ</a></li>
-            </ul>
-            <div class="header__btn">
-                <a href="" class="header__btn-buy-ticket btn--white ">
-                    MUA VÉ
+            <div class="header__wrap">
+                <a href="#" class="header__logo-link">
+                    <img src="./assets/image/ZOOZALABIM-07.png" alt="" class="header__logo-img">
                 </a>
-                <a href="" class="header__btn-donate btn--green">
-                    TÀI TRỢ
-                </a>
+                <ul class="header__nav">
+                    <li class="header__nav-introduce"><a href="#introduce">Giới thiệu</a></li>
+                    <li class="header__nav-animal"><a href="#animal">Muôn loài</a>
+                        <!-- <ul class="header__subnav-animal">
+                            <li><a href="#image">Hình ảnh</a></li>
+                            <li><a href="#video">Video</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="header__nav-news"><a href="#news">Tin tức - Sự kiện</a></li>
+                    <li class="header__nav-contact"><a href="#contact">Liên hệ</a></li>
+                </ul>
+                <div class="header__btn">
+                    <a href="" class="header__btn-buy-ticket btn--white ">
+                        MUA VÉ
+                    </a>
+                    <a href="" class="header__btn-donate btn--green">
+                        TÀI TRỢ
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -53,13 +55,16 @@
 
                 <!-- img -->
                 <div class="slide slide-first">
-                    <img src="./assets/image/Slide1.png" alt="">
+                    <div class="slide__img-first">
+                    </div>
                 </div>
                 <div class="slide">
-                    <img src="./assets/image/Slide2.jpeg" alt="">
+                    <div class="slide__img-second">             
+                    </div>
                 </div>
                 <div class="slide">
-                    <img src="./assets/image/Slide3.jpeg" alt="">
+                    <div class="slide__img-third">      
+                    </div>
                 </div>  
                  <!-- automatic navigation -->
                 <div class="navigation-auto">
@@ -305,7 +310,6 @@
         </div>
         <!-- Footer -->
         <div class="footer">
-            <img src="./assets/image/bird footer.jpeg" alt="" class="footer__img" >
             <div class="footer__list">
                 <div class="footer__item">
                     <div class="footer__item-heading">Giờ hoạt động</div>
@@ -351,8 +355,43 @@
 
     </div>
 
-    <div class="overlay">
-        
+    <div class="modal">
+        <!-- login form-->
+        <div class="auth-form">
+            <div class="auth-form__container">
+                <div class="auth-form__logo">
+                    <img src="./assets/image/ZOOZALABIM-07.png" alt="">
+                </div>
+                <div class="auth-form__heading">
+                    ĐĂNG NHẬP
+                </div>
+                <div class="auth-form__body">
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Tài khoản">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                        </div>
+                    </div>
+                    <div class="auth-form__control">
+                        <a href=""class="auth-form__btn-forget-password">
+                            Quên mật khẩu
+                        </a>
+                        <button class="auth-form__btn">
+                            Đăng nhập
+                        </button>
+                    </div>
+                </div>
+                <div class="auth-form__footer">
+                    <span>Chưa có tài khoản ?</span>
+                    <a href="" class="auth-form__footer-btn-control">
+                        Đăng ký
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

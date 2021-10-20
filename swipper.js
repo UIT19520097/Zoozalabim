@@ -16,7 +16,7 @@ var swiper = new Swiper(".mySwiper1", {
 
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 5,
-  spaceBetween: 30,
+  spaceBetween: 10,
   loop:true,
   centeredSlides: true,
   navigation: {

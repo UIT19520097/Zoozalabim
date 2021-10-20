@@ -1,12 +1,12 @@
-var counter=2;
-setInterval(function() {
-    document.getElementById('radio' +counter).checked = true;
-    counter++;
-    if(counter>3)
-    {
-        counter =1
-    } 
-},5000);
+// var counter=2;
+// setInterval(function() {
+//     document.getElementById('radio' +counter).checked = true;
+//     counter++;
+//     if(counter>3)
+//     {
+//         counter =1
+//     } 
+// },5000);
 
 const $=document.querySelector.bind(document);
 const $$=document.querySelectorAll.bind(document);

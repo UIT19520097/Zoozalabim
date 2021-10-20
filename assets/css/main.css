@@ -22,18 +22,22 @@ html
     top: 0;
     left: 0;
     right: 0;
-    height: 66px;
+    height: var(--header-height);
     width: 100%;
-    display: flex;
-    align-items: center;
     background-color: var(--white-color);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
-    z-index: 100
+    z-index: 10;
+}
+.header__wrap
+{
+    height:var(--header-height); 
+    display: flex;
+    align-items: center;
 }
 .header__logo-link
 {
-    max-width: 202px;
-    margin: 0 auto 0 50px;
+    max-width: 203px;
+    margin: 0 auto 0 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +50,7 @@ html
     display: flex;
     list-style-type: none; 
     justify-content: space-around; 
-    margin-right: 50px;
+    margin-right: 40px;
 }
 .header__nav li
 {
@@ -62,7 +66,7 @@ html
 {
     text-decoration: none;
     color: var(--green-color);
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 20px; 
 }
 /* .header__nav-animal{
@@ -96,17 +100,17 @@ html
 } */
 .header__btn
 {
-    margin: 0 50px;
+    margin: 0 30px 0 0;
 }
 .header__btn-buy-ticket
 {
-    margin-right: 20px;
-    padding: 10px 30px;
+    margin-right: 10px;
+    padding: 10px 25px;
     border-width: 2px;
 }
 .header__btn-donate
 {
-    padding: 10px 30px;
+    padding: 10px 25px;
 }
 .header__btn-buy-ticket:hover,
 .header__btn-donate:hover
@@ -116,13 +120,11 @@ html
 /* Slider */
 .slider
 {
-    margin-top: 66px;
     position: relative;
-    width: 85%;
-    /* width: 1227px;
-    height:786px; */
+    width: 100%;
     overflow: hidden;
     margin: 0 auto;
+    margin-top: var(--header-height);
 }
 .slides
 {
@@ -130,11 +132,28 @@ html
     height: auto;
     display: flex;
 }
-.slide img
+.slide__img-first
 {
-    width:100%;
-    min-height: 900px;
-    max-height: 962px;
+    background: url(../image/Slide1.png) top center / cover no-repeat;
+    padding-top: 47%;
+    background-color: #cccccc;
+    position: relative;
+    filter: brightness(70%);
+}
+.slide__img-second
+{
+    background: url(../image/Slide2.jpeg) top center / cover no-repeat;
+    padding-top: 47%;
+    background-color: #cccccc;
+    position: relative;
+    filter: brightness(70%);
+}
+.slide__img-third
+{
+    background: url(../image/Slide3.jpeg) top center / cover no-repeat;
+    padding-top: 47%;
+    background-color: #cccccc;
+    position: relative;
     filter: brightness(70%);
 }
 .slides input
@@ -237,6 +256,7 @@ html
     margin: 20px 0;
     font-size: 18px;
     line-height:1.5;
+    text-align: justify;
     text-shadow:  0 0 1 #000;
 }
 .slider__btn-login,
@@ -324,7 +344,7 @@ html
 {
     margin: 0px auto;
     position: relative;
-    width: 80%;
+    max-width: 1300px;
     height:700px;
     display: flex;
     justify-content:space-between;
@@ -373,9 +393,9 @@ html
     margin: 100px 0;
 }
 .mySwiper1.swiper {
-    width: 60%;
+    max-width:900px;
     height: 100%;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
 }
 
 .mySwiper1 .swiper-slide {
@@ -432,7 +452,7 @@ html
 .video__category-option-list
 {
     margin-top: 20px;
-    width: 50%;
+    width: 1100px;
 }
 .video .mySwiper2.swiper {
     width: 100%;
@@ -470,7 +490,7 @@ html
 }
 .video__category-option-item
 {
-    padding: 15px 0;
+    height: 60px;
     width: 100%;
     border-radius: 5px;
     border: 3px  solid var(--green-color);
@@ -527,7 +547,7 @@ html
 }
 .news__heading
 {
-    width: 50%;
+    max-width:900px;
     margin:0 auto;
     display: flex;
     flex-direction: column;
@@ -537,7 +557,7 @@ html
 .news__list
 {
     margin-top: 50px;
-    width: 65%;
+    max-width: 1200px;
     display:flex;
     justify-content:space-evenly;
 }
@@ -545,7 +565,7 @@ html
 {
     overflow: hidden;
     border-radius: 5px;
-    margin-left: 50px;
+    margin:0 25px ;
     width: calc(100%/3);
     background-color: var(--green-color);
     display: block;
@@ -611,7 +631,7 @@ html
 {
     margin: 0 auto;
     position: relative;
-    width: 80%;
+    max-width:1500px;
     height:450px;
     display: flex;
     justify-content:space-between;
@@ -620,7 +640,7 @@ html
 .contact__shape
 {
     width: 40%;
-    height: 100%;
+    padding-top: 30%;
     background-color: var(--green-color);
     position: relative;
 }
@@ -749,4 +769,97 @@ html
     right: 20px;
     transform:translateY(-100%);
     width: 200px;
+}
+
+/* Login-logout */
+.modal
+{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 11;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+.auth-form
+{
+    width: 450px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.auth-form__logo img
+{
+    max-width: 202px;
+}
+.auth-form__logo
+{
+    background-color:var(--green-color);
+    text-align: center;
+
+}
+.auth-form__heading
+{
+    font-size: 22px;
+    font-weight:600;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--green-color);
+}
+.auth-form__body
+{
+    padding:0 16px 20px;
+}
+.auth-form__form
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+.auth-form__group
+{
+    margin: 10px 0;
+    width: 100%;
+}
+.auth-form__input
+{
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 16px;
+}
+.auth-form__control
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.auth-form__btn
+{
+    background-color:var(--green-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color:var(--white-color);
+    cursor: pointer;
+    border-radius:2px;
+}
+.auth-form__btn-forget-password
+{
+    color: var(--green-color);
+}
+.auth-form__footer
+{
+    background-color:var(--green-color);
+    text-align: center;
+    padding: 10px 0;
+    color: var(--white-color)
+}
+.auth-form__footer-btn-control
+{
+    
 }
