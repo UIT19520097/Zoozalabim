@@ -11,8 +11,8 @@
 const $=document.querySelector.bind(document);
 const $$=document.querySelectorAll.bind(document);
 
-const swiperWrapperVideo=$('.video .swiper-wrapper');
-const videoDisplay=$('.video .video__category-place-display')
+const swiperWrapperVideo=$('.video-animal .swiper-wrapper');
+const videoDisplay=$('.video-animal .video__category-place-display')
 const videos={
   currentIndex:0,
   videoList: [
