@@ -1,0 +1,11 @@
+@media (min-width: 740px) and (max-width:1025px)
+{
+    .video__category-place-display
+    {
+        width: 480px;
+        height: 270px;
+    }
+    :root{
+        --swiper-width: 150px;
+    }
+}
