@@ -6,11 +6,11 @@
 }
 html
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     scroll-behavior: smooth;
 }
 #main{
-    background-color: #F3FFEE;
+    background-color: var(--background-color);
     position: relative;
 }
 
@@ -50,7 +50,7 @@ html
     display: flex;
     list-style-type: none; 
     justify-content: space-around; 
-    margin-right: 40px;
+    margin-right: 20px;
 }
 .header__nav li
 {
@@ -106,7 +106,6 @@ html
 {
     margin-right: 10px;
     padding: 10px 25px;
-    border-width: 2px;
 }
 .header__btn-donate
 {
@@ -138,7 +137,7 @@ html
     padding-top: 47%;
     background-color: #cccccc;
     position: relative;
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 .slide__img-second
 {
@@ -146,7 +145,7 @@ html
     padding-top: 47%;
     background-color: #cccccc;
     position: relative;
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 .slide__img-third
 {
@@ -154,7 +153,7 @@ html
     padding-top: 47%;
     background-color: #cccccc;
     position: relative;
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 .slides input
 {
@@ -266,7 +265,8 @@ html
     font-size: 21px;
     font-weight: 600;
     border-radius:10px;
-    margin-right: 24px;    
+    margin-right: 24px;
+    cursor: pointer;   
 }
 .slider__btn-login:hover,
 .slider__btn-register:hover
@@ -281,14 +281,17 @@ html
     width: 100%;
     margin: 0 0 100px;
 }
-.info
+.info{
+    padding-top: 120px;
+}
+.info.row
 {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     z-index: 1;
-    padding-top: 160px;
+    padding-top: 120px;
 }
 /* .info::after
 {
@@ -305,6 +308,7 @@ html
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .info__item-icon
 {
@@ -352,10 +356,6 @@ html
 {
     width: 100%;
     border-radius: 15px;
-}
-.introduce__content
-{
-    
 }
 /* Bán vé */
 .ticket
@@ -415,12 +415,6 @@ html
     margin: auto;
     height: 100%
 }
-.donate__text
-{
-    font-size:20px;
-    text-align: justify;
-    margin: 40px 0;
-}
 .donate__btn
 {
     text-decoration: none;
@@ -431,6 +425,7 @@ html
     border-radius: 3px;
     font-size: 30px;
     font-weight:600;
+    margin-top: 20px;
 }
 .donate__btn:hover
 {
@@ -441,25 +436,24 @@ html
 {
     width: 100%;
     border-radius: 15px;
+    margin-top: 30px;
 }
 /* hình ảnh động vật */
-.content__animal
-{
-    padding-top: 100px;
-}
+
 .image-animal
 {
-    margin-top:50px;
+    padding-top:66px;
 }
 .image-animal__heading {
     text-align: center;
 }
 .image-animal__list{
-    margin-top: 80px;
+    margin-top: 50px;
     position: relative;
 }
 .image-animal__item
 {
+    margin-top: 20px;
     text-decoration: none;
     display: block;
     border-radius: 5px;
@@ -479,7 +473,7 @@ html
     color: var(--yellow-color);
     font-size: 30px;
     font-weight:600;
-    padding: 5px 0 5px;
+    padding: 15px 0 10px;
     text-align: center;
 }
 .image-animal__item-desc
@@ -522,12 +516,14 @@ html
 .video-animal
 {
     text-align: center;
+    padding-top: 66px;
 }
 .video__category{
-    margin-top:30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1400px;
+    margin: 50px auto 0;
 }
 .video__category-option-list
 {
@@ -538,6 +534,10 @@ html
     padding: 12px 16px;
     background-color: var(--green-color);
     border-radius:5px;
+}
+.video__category-place-display{
+    width:960px;
+    height: 540px;
 }
 .swiper {
     width: var(--swiper-width);
@@ -600,10 +600,10 @@ html
     content: "";
     display: block;
     position: absolute;
-    top: 0;
+    top: -10px;
     bottom: 0;
     width: var(--swiper-width);
-    height: 50px;
+    height: 55px;
     background-color: var(--background-color);
     right: 0px;
     z-index: 11;
@@ -615,7 +615,7 @@ html
     left: 0;
     width: var(--swiper-width);
     height: 50px;
-    bottom:0;
+    bottom:-5px;
     background-color: var(--background-color);
     z-index: 11;
 }
@@ -647,6 +647,8 @@ html
     background-color: var(--green-color);
     text-decoration: none;
     display: block;
+    margin-top: 20px;
+    cursor: pointer;
 }
 .news__list
 {
@@ -748,7 +750,7 @@ html
 }
 .contact-item p
 {
-    font-size: 24px;
+    font-size: 20px;
     display: inline-block;
     margin-left: 20px;
 }
@@ -769,19 +771,16 @@ html
 .footer
 {
     background-color: var(--green-color);
-    text-align: center;
     position: relative;
+    text-align: center;
 }
 .footer__list
 {
     padding-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
 }
 .footer__item
 {
-    text-align: center;
-    min-width: 228px
+    text-align: left;
 }
 .footer__item-heading
 {
@@ -814,7 +813,6 @@ html
 .footer__item-icon
 {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .footer__item-icon a
@@ -825,12 +823,12 @@ html
 .footer__item-icon i
 {
     font-size:28px;
-    margin: 0 10px;
+    margin: 0 10px 0 0px;
 }
 .footer__logo
 {
-    max-width:202px;
-    margin: 10px 0;
+    max-width:300px;
+    margin: 50px 0 10px;
 }
 .footer__copyright
 {  
@@ -856,26 +854,51 @@ html
     left: 0;
     background-color: rgba(0,0,0,0.4);
     z-index: 11;
-    display:flex;
+    display:none;
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 10px rgb(0 0 0 / 30%);
 }
+.modal.open { 
+    display:flex;
+}
 .auth-form
 {
+    z-index: 111;
     width: 600px;
     background-color: var(--white-color);
     border-radius: 8px;
     overflow: hidden;
     position: relative;
+    display: none;
+    animation: authFormFadeIn ease 0.5s;
+}
+@keyframes authFormFadeIn
+{
+    from
+    {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.auth-form__register.open{
+    display: block;
+}
+.auth-form__login.open{
+    display: block;
 }
 .auth-form__icon-close
 {
     position: absolute;
     top:0;
     right: 0;
-    font-size: 30px;
-    padding: 10px 10px;
+    font-size: 40px;
+    padding: 15px 15px;
     cursor: pointer;
     color: var(--white-color);
 }
@@ -895,7 +918,7 @@ html
 }
 .auth-form__body
 {
-    padding:0 16px;
+    padding:0 40px;
 }
 .auth-form__form
 {
@@ -913,7 +936,7 @@ html
     width: 100%;
     font-size: 20px;
     border-radius: 30px;
-    border: 1px solid var(--green-color);
+    border: 2px solid #999;
     margin-top: 15px;
 }
 .auth-form__control
@@ -946,14 +969,19 @@ html
 }
 .auth-form__footer
 {
-    background-color:var(--white-color);
+    background-color:var(--green-color);
     text-align: center;
-    padding: 10px 0;
-    color: var(--green-color)
+    margin-top: 20px;
+    padding: 10px 0 10px;
+    color: var(--white-color)
 }
 .auth-form__footer-btn-control
 {
-    color: var(--green-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border: none;
+    font-size: inherit;
+    background-color: transparent;
 }
 .auth-form__footer-btn-control:hover
 {

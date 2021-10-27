@@ -2,7 +2,7 @@
 {
     --green-color: #357643;
     --white-color: #fff;
-    --background-color:#F3FFEE;
+    --background-color:#fff;
     --black-color: #000;
     --header-height: 60px;
     --yellow-color:#FAA73F;
@@ -13,8 +13,8 @@
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--green-color);
-    border: solid 1px var(--green-color);
-    border-radius: 2px;
+    border: solid 2px var(--green-color);
+    border-radius: 3px;
     padding: 10px 15px;
     display: inline-block;
 }
@@ -24,8 +24,8 @@
     text-decoration: none;
     color: var(--green-color) ;
     background-color: var(--white-color);
-    border: solid 1px var(--green-color);
-    border-radius: 2px;
+    border: solid 2px var(--green-color);
+    border-radius: 3px;
     padding: 10px 15px;
 }
 .section-heading--green
