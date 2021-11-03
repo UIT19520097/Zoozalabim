@@ -128,12 +128,12 @@ html
 /* TICKET FORM DATE */
 .ticket__form-date
 {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .ticket__form-date-heading
 {
     color: var(--black-color);
-    font-size: 20px;
+    font-size: 25px;
     font-weight:700;
 }
 .ticket__form-date-input
@@ -147,9 +147,9 @@ html
 .ticket__form-quantity-heading
 {
     color: var(--black-color);
-    font-size: 20px;
+    font-size: 25px;
     font-weight:700;
-    margin-top:20px;
+    margin-top:40px;
 }
 .ticket__form-quantity
 {
@@ -158,28 +158,29 @@ html
 }
 .ticket__form-quantity tr
 {
-    padding-top: 20px;
+    margin-top:20px;
+    height:50px;
 }
 .ticket__form-quantity-label 
 {
-    font-size: 20px;
+    font-size: 25px;
 }
 .ticket__form-quantity-type
 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 }
 .ticket__form-quantity-type-price
 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight:600;   
 }
 .ticket__form-quantity-input-kid,
 .ticket__form-quantity-input-adult
 {
-    min-width: 20px;
-    padding: 10px 0px;
-    font-size:20px;
+    min-width: 40px;
+    padding: 2px 0px;
+    font-size:25px;
     font-weight:500;
     border: none;
     outline: none;
@@ -198,9 +199,9 @@ html
 .ticket__form-info-customer-input
 {
     width: 100%;
-    padding: 10px 20px;
+    padding: 20px 0;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .ticket__form-buy-btn-logo-paypal
 {
@@ -209,7 +210,7 @@ html
 }
 .ticket__form-buy-btn
 {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     background-color: var(--yellow-color);
